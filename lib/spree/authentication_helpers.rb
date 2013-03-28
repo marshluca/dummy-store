@@ -8,19 +8,19 @@ module Spree
     end
 
     def spree_current_user
-      current_user
+      current_refinery_user
     end
 
     def spree_login_path
-      main_app.login_path
+      refinery.new_refinery_user_session_path
     end
 
     def spree_signup_path
-      main_app.signup_path
+      refinery.new_refinery_user_registration_path
     end
 
     def spree_logout_path
-      main_app.logout_path
+      refinery.destroy_refinery_user_session_path
     end
   end
 end
