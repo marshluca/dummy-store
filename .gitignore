@@ -77,3 +77,4 @@ capybara-*html
 # vendor/extensions dummy applications.
 vendor/extensions/**/spec/dummy
 dummy_*
+public/spree
